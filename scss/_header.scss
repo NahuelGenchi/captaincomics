@@ -1,4 +1,20 @@
 .header {
-    min-height: 7vh;
+    min-height: 10vh;
+    font-size: 1.3vw;
     @extend .sections;
+    nav {
+        min-height: 10vh;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        font-size: 4vw;
+    }
 }

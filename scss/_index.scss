@@ -1,4 +1,87 @@
 .mainIndex {
-    min-height: 86vh;
+    min-height: 84vh;
     @extend .sections;
+    .first_container {
+        font-family: 'Bubblegum Sans', cursive;
+        background-color: rgba(255, 255, 255, 0.90);
+        .container-fluid {
+            height: 100%;
+            padding: 0;
+            .row {
+                height: 100%;
+                margin: 0;
+                .logoContainer {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border-right: 1px solid rgba(0, 0, 0, 0.20);
+                }
+                .titleContainer {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .second_container {
+        height: 58.8vh;
+        .container-fluid {
+            height: 100%;
+            @extend .paddingReset;
+            .row {
+                height: 100%;
+                @extend .marginReset;
+                .col-12 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @extend .paddingReset;
+                    .darkBackground {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        width: 100%;
+                        cursor: pointer;
+                        color: white;
+                        background-color: rgba(48, 48, 48, 0.80);
+                        transition: background-color 0.8s;
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.90);
+                        }
+                    }
+                }
+            }
+            .bibliotecaBackground {
+                background: url("../img/fir_img.jpg");
+            }
+            .personajesBackground {
+                background: url("../img/sec_img.jpg");
+            }
+            .contactoBackground {
+                background: url("../img/thi_img.jpg");
+            }
+            .infoBackground {
+                background: url("../img/fou_img.jpg");
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .first_container {
+        height: 40vh;
+        .logoContainer {
+            border-right: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+        }
+    }
+    .second_container {
+        height: 44vh;
+    }
 }

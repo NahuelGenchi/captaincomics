@@ -7,12 +7,14 @@
 body {
     min-height: 100vh;
     max-height: none;
+    background-image: url("../img/background-body.jpg");
+    background-repeat: repeat;
 }
 
 .first_container {
-    height: 25.8vh;
+    height: 25.2vh;
 }
 
 .second_container {
-    min-height: 60.2vh;
+    min-height: 58.8vh;
 }
