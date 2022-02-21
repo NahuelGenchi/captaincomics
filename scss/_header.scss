@@ -2,6 +2,10 @@
     min-height: 10vh;
     font-size: 1.3vw;
     @extend .sections;
+    border-top: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.20);
+    border-bottom: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.20);
     nav {
         min-height: 10vh;
     }

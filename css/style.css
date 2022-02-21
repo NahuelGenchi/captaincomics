@@ -1,4 +1,4 @@
-.sections, .header, .mainIndex, .footer {
+.sections, .header, .mainIndex, .mainBiblioteca, .mainContacto, .mainInfo, .footer {
   border: 1px solid gray;
   margin: 0 auto; }
 
@@ -20,14 +20,41 @@ body {
   background-repeat: repeat; }
 
 .first_container {
-  height: 25.2vh; }
+  height: 25.2vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: 'Bubblegum Sans', cursive; }
+  .first_container .container-fluid {
+    height: 100%;
+    padding: 0; }
+    .first_container .container-fluid .row {
+      height: 100%;
+      margin: 0; }
+      .first_container .container-fluid .row .logoContainer {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid rgba(0, 0, 0, 0.2); }
+      .first_container .container-fluid .row .titleContainer {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
 
 .second_container {
-  min-height: 58.8vh; }
+  min-height: 58.8vh;
+  background-color: rgba(255, 255, 255, 0.9); }
 
 .header {
   min-height: 10vh;
-  font-size: 1.3vw; }
+  font-size: 1.3vw;
+  border-top: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.2); }
   .header nav {
     min-height: 10vh; }
 
@@ -41,28 +68,6 @@ body {
 
 .mainIndex {
   min-height: 84vh; }
-  .mainIndex .first_container {
-    font-family: 'Bubblegum Sans', cursive;
-    background-color: rgba(255, 255, 255, 0.9); }
-    .mainIndex .first_container .container-fluid {
-      height: 100%;
-      padding: 0; }
-      .mainIndex .first_container .container-fluid .row {
-        height: 100%;
-        margin: 0; }
-        .mainIndex .first_container .container-fluid .row .logoContainer {
-          padding: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          border-right: 1px solid rgba(0, 0, 0, 0.2); }
-        .mainIndex .first_container .container-fluid .row .titleContainer {
-          padding: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center; }
   .mainIndex .second_container {
     height: 58.8vh; }
     .mainIndex .second_container .container-fluid {
@@ -102,6 +107,19 @@ body {
       border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
   .second_container {
     height: 44vh; } }
+
+.mainBiblioteca {
+  min-height: 84vh; }
+
+.mainContacto {
+  min-height: 84vh; }
+  .mainContacto .first_container {
+    height: 25.2vh; }
+
+.mainInfo {
+  min-height: 84vh; }
+  .mainInfo .first_container {
+    height: 25.2vh; }
 
 .footer {
   min-height: 6vh;
