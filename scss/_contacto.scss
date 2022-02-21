@@ -4,4 +4,17 @@
     .first_container {
         height: 25.2vh;
     }
+    .second_container {
+        min-height: 58.8vh;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        article {
+            height: 90%;
+            width: 90%;
+            margin: 0 auto;
+            padding: 4vh 0;
+        }
+    }
 }

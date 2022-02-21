@@ -1,4 +1,4 @@
-.sections, .header, .mainIndex, .mainBiblioteca, .mainContacto, .mainInfo, .footer {
+.sections, .header, .mainIndex, .mainBiblioteca, .mainPersonajes, .mainContacto, .mainInfo, .footer {
   border: 1px solid gray;
   margin: 0 auto; }
 
@@ -111,15 +111,40 @@ body {
 .mainBiblioteca {
   min-height: 84vh; }
 
+.mainPersonajes {
+  min-height: 84vh; }
+
 .mainContacto {
   min-height: 84vh; }
   .mainContacto .first_container {
     height: 25.2vh; }
+  .mainContacto .second_container {
+    min-height: 58.8vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mainContacto .second_container article {
+      height: 90%;
+      width: 90%;
+      margin: 0 auto;
+      padding: 4vh 0; }
 
 .mainInfo {
   min-height: 84vh; }
   .mainInfo .first_container {
     height: 25.2vh; }
+  .mainInfo .second_container {
+    min-height: 58.8vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mainInfo .second_container article {
+      height: 90%;
+      width: 90%;
+      margin: 0 auto;
+      padding: 4vh 0; }
 
 .footer {
   min-height: 6vh;
