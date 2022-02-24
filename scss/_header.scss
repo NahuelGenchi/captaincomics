@@ -11,6 +11,10 @@
     }
 }
 
+.navbar-nav {
+    margin: 0 auto;
+}
+
 @media (max-width: 991px) {
     .header {
         font-size: 2vw;
@@ -20,5 +24,23 @@
 @media (max-width: 425px) {
     .header {
         font-size: 4vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        border: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header {
+        font-size: 1.5rem;
     }
 }

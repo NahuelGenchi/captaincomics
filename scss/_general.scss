@@ -13,7 +13,9 @@ body {
 
 .first_container {
     height: 25.2vh;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(51, 56, 60, 0.95);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.20);
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
     font-family: 'Bubblegum Sans', cursive;
     .container-fluid {
@@ -44,4 +46,15 @@ body {
 .second_container {
     min-height: 58.8vh;
     background-color: rgba(255, 255, 255, 0.90);
+}
+
+@media (min-width: 1440px) {
+    .first_container {
+        .h1 {
+            font-size: 3.5rem;
+        }
+        .h6 {
+            font-size: 1.5rem;
+        }
+    }
 }

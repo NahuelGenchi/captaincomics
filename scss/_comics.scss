@@ -1,4 +1,4 @@
-.mainBiblioteca {
+.mainComics {
     min-height: 84vh;
     @extend .sections;
     .second_container {
@@ -10,10 +10,9 @@
             .row {
                 @extend .marginReset;
                 .colGallery {
-                    height: 70vh;
                     border: 1px solid rgba(0, 0, 0, 0.20);
                     @extend .paddingReset;
-                    figure {
+                    .portada {
                         height: 100%;
                         img {
                             height: 92%;
@@ -35,17 +34,32 @@
                         }
                     }
                 }
+                .comicExplainContainer {
+                    display: flex;
+                    align-items: center;
+                    min-height: 70vh;
+                    height: auto;
+                    .article {
+                        height: auto;
+                        width: 90%;
+                        margin: 4vh auto;
+                        p {
+                            margin: 1rem 0 1rem 0;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-@media (max-width: 425px) {
-    .first_container {
-        height: 40vh;
-        .logoContainer {
-            border-right: none;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+@media (min-width: 1440px) {
+    .article {
+        .h2 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.5rem;
         }
     }
 }

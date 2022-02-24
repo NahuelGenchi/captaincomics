@@ -1,11 +1,10 @@
-.sections, .header, .mainIndex, .mainBiblioteca, .mainPersonajes, .mainContacto, .mainInfo, .footer {
-  border: 1px solid gray;
+.sections, .header, .mainIndex, .mainBiblioteca, .mainComics, .mainPersonajes, .mainContacto, .mainInfo, .footer {
   margin: 0 auto; }
 
-.paddingReset, .mainIndex .second_container .container-fluid, .mainIndex .second_container .container-fluid .row .col-12 {
+.paddingReset, .mainIndex .second_container .container-fluid, .mainIndex .second_container .container-fluid .row .col-12, .mainBiblioteca .second_container .container-fluid, .mainBiblioteca .second_container .container-fluid .row .colGallery, .mainComics .second_container .container-fluid, .mainComics .second_container .container-fluid .row .colGallery {
   padding: 0; }
 
-.marginReset, .mainIndex .second_container .container-fluid .row {
+.marginReset, .mainIndex .second_container .container-fluid .row, .mainBiblioteca .second_container .container-fluid .row, .mainComics .second_container .container-fluid .row {
   margin: 0; }
 
 * {
@@ -21,7 +20,9 @@ body {
 
 .first_container {
   height: 25.2vh;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(51, 56, 60, 0.95);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-family: 'Bubblegum Sans', cursive; }
   .first_container .container-fluid {
@@ -48,6 +49,12 @@ body {
   min-height: 58.8vh;
   background-color: rgba(255, 255, 255, 0.9); }
 
+@media (min-width: 1440px) {
+  .first_container .h1 {
+    font-size: 3.5rem; }
+  .first_container .h6 {
+    font-size: 1.5rem; } }
+
 .header {
   min-height: 10vh;
   font-size: 1.3vw;
@@ -58,6 +65,9 @@ body {
   .header nav {
     min-height: 10vh; }
 
+.navbar-nav {
+  margin: 0 auto; }
+
 @media (max-width: 991px) {
   .header {
     font-size: 2vw; } }
@@ -65,6 +75,18 @@ body {
 @media (max-width: 425px) {
   .header {
     font-size: 4vw; } }
+
+@media (max-width: 768px) {
+  .header {
+    border: none; } }
+
+@media (min-width: 1024px) {
+  .header {
+    font-size: 1rem; } }
+
+@media (min-width: 1440px) {
+  .header {
+    font-size: 1.5rem; } }
 
 .mainIndex {
   min-height: 84vh; }
@@ -110,6 +132,82 @@ body {
 
 .mainBiblioteca {
   min-height: 84vh; }
+  .mainBiblioteca .second_container {
+    min-height: 58.8vh;
+    height: auto; }
+    .mainBiblioteca .second_container .container-fluid {
+      height: 100%; }
+      .mainBiblioteca .second_container .container-fluid .row .colGallery {
+        height: 70vh;
+        border: 1px solid rgba(0, 0, 0, 0.2); }
+        .mainBiblioteca .second_container .container-fluid .row .colGallery figure {
+          height: 100%; }
+          .mainBiblioteca .second_container .container-fluid .row .colGallery figure img {
+            height: 92%;
+            width: 100%;
+            filter: grayscale(100%);
+            transition: filter 0.8s; }
+            .mainBiblioteca .second_container .container-fluid .row .colGallery figure img:hover {
+              filter: grayscale(0%); }
+          .mainBiblioteca .second_container .container-fluid .row .colGallery figure figcaption {
+            height: 8%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(48, 48, 48, 0.6);
+            color: white; }
+
+@media (max-width: 425px) {
+  .first_container {
+    height: 40vh; }
+    .first_container .logoContainer {
+      border-right: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); } }
+
+.mainComics {
+  min-height: 84vh; }
+  .mainComics .second_container {
+    min-height: 58.8vh;
+    height: auto; }
+    .mainComics .second_container .container-fluid {
+      height: 100%; }
+      .mainComics .second_container .container-fluid .row .colGallery {
+        border: 1px solid rgba(0, 0, 0, 0.2); }
+        .mainComics .second_container .container-fluid .row .colGallery .portada {
+          height: 100%; }
+          .mainComics .second_container .container-fluid .row .colGallery .portada img {
+            height: 92%;
+            width: 100%;
+            filter: grayscale(100%);
+            transition: filter 0.8s; }
+            .mainComics .second_container .container-fluid .row .colGallery .portada img:hover {
+              filter: grayscale(0%); }
+          .mainComics .second_container .container-fluid .row .colGallery .portada figcaption {
+            height: 8%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(48, 48, 48, 0.6);
+            color: white; }
+      .mainComics .second_container .container-fluid .row .comicExplainContainer {
+        display: flex;
+        align-items: center;
+        min-height: 70vh;
+        height: auto; }
+        .mainComics .second_container .container-fluid .row .comicExplainContainer .article {
+          height: auto;
+          width: 90%;
+          margin: 4vh auto; }
+          .mainComics .second_container .container-fluid .row .comicExplainContainer .article p {
+            margin: 1rem 0 1rem 0; }
+
+@media (min-width: 1440px) {
+  .article .h2 {
+    font-size: 2.5rem; }
+  .article p {
+    font-size: 1.5rem; } }
 
 .mainPersonajes {
   min-height: 84vh; }
@@ -143,14 +241,14 @@ body {
     .mainInfo .second_container article {
       height: 90%;
       width: 90%;
-      margin: 0 auto;
+      margin: 4vh auto;
       padding: 4vh 0; }
 
 .footer {
   min-height: 6vh;
   margin: 0 auto;
-  background-color: rgba(44, 44, 44, 0.904);
-  border: 1px solid black;
+  background-color: #212529;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center; }
