@@ -1,10 +1,10 @@
 .sections, .header, .mainIndex, .mainBiblioteca, .mainComics, .mainPersonajes, .mainContacto, .mainInfo, .footer {
   margin: 0 auto; }
 
-.paddingReset, .mainIndex .second_container .container-fluid, .mainIndex .second_container .container-fluid .row .col-12, .mainBiblioteca .second_container .container-fluid, .mainBiblioteca .second_container .container-fluid .row .colGallery, .mainComics .second_container .container-fluid, .mainComics .second_container .container-fluid .row .colGallery {
+.paddingReset, .mainIndex .second_container .container-fluid, .mainIndex .second_container .container-fluid .row .col-12, .mainBiblioteca .second_container .container-fluid, .mainBiblioteca .second_container .container-fluid .row .colGallery, .mainComics .second_container .container-fluid, .mainComics .second_container .container-fluid .row .colGallery, .mainPersonajes .second_container .container-fluid, .mainPersonajes .second_container .container-fluid .row .colGallery {
   padding: 0; }
 
-.marginReset, .mainIndex .second_container .container-fluid .row, .mainBiblioteca .second_container .container-fluid .row, .mainComics .second_container .container-fluid .row {
+.marginReset, .mainIndex .second_container .container-fluid .row, .mainBiblioteca .second_container .container-fluid .row, .mainComics .second_container .container-fluid .row, .mainPersonajes .second_container .container-fluid .row {
   margin: 0; }
 
 * {
@@ -211,6 +211,38 @@ body {
 
 .mainPersonajes {
   min-height: 84vh; }
+  .mainPersonajes .second_container {
+    min-height: 58.8vh;
+    height: auto; }
+    .mainPersonajes .second_container .container-fluid {
+      height: 100%; }
+      .mainPersonajes .second_container .container-fluid .row .colGallery {
+        height: 70vh;
+        border: 1px solid rgba(0, 0, 0, 0.2); }
+        .mainPersonajes .second_container .container-fluid .row .colGallery figure {
+          height: 100%; }
+          .mainPersonajes .second_container .container-fluid .row .colGallery figure img {
+            height: 92%;
+            width: 100%;
+            filter: grayscale(100%);
+            transition: filter 0.8s; }
+            .mainPersonajes .second_container .container-fluid .row .colGallery figure img:hover {
+              filter: grayscale(0%); }
+          .mainPersonajes .second_container .container-fluid .row .colGallery figure figcaption {
+            height: 8%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(48, 48, 48, 0.6);
+            color: white; }
+
+@media (max-width: 425px) {
+  .first_container {
+    height: 40vh; }
+    .first_container .logoContainer {
+      border-right: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); } }
 
 .mainContacto {
   min-height: 84vh; }

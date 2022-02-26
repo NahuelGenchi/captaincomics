@@ -1,4 +1,51 @@
 .mainPersonajes {
     min-height: 84vh;
     @extend .sections;
+    .second_container {
+        min-height: 58.8vh;
+        height: auto;
+        .container-fluid {
+            height: 100%;
+            @extend .paddingReset;
+            .row {
+                @extend .marginReset;
+                .colGallery {
+                    height: 70vh;
+                    border: 1px solid rgba(0, 0, 0, 0.20);
+                    @extend .paddingReset;
+                    figure {
+                        height: 100%;
+                        img {
+                            height: 92%;
+                            width: 100%;
+                            filter: grayscale(100%);
+                            transition: filter 0.8s;
+                            &:hover {
+                                filter: grayscale(0%);
+                            }
+                        }
+                        figcaption {
+                            height: 8%;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: rgba(48, 48, 48, 0.60);
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .first_container {
+        height: 40vh;
+        .logoContainer {
+            border-right: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+        }
+    }
 }
