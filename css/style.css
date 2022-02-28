@@ -1,10 +1,10 @@
-.sections, .header, .mainIndex, .mainBiblioteca, .mainComics, .mainPersonajes, .mainContacto, .mainInfo, .footer {
+.sections, .header, .mainIndex, .mainBiblioteca, .mainComics, .mainPersonajes, .mainCharacter, .mainContacto, .mainInfo, .footer {
   margin: 0 auto; }
 
-.paddingReset, .mainIndex .second_container .container-fluid, .mainIndex .second_container .container-fluid .row .col-12, .mainBiblioteca .second_container .container-fluid, .mainBiblioteca .second_container .container-fluid .row .colGallery, .mainComics .second_container .container-fluid, .mainComics .second_container .container-fluid .row .colGallery, .mainPersonajes .second_container .container-fluid, .mainPersonajes .second_container .container-fluid .row .colGallery {
+.paddingReset, .mainIndex .second_container .container-fluid, .mainIndex .second_container .container-fluid .row .col-12, .mainBiblioteca .second_container .container-fluid, .mainBiblioteca .second_container .container-fluid .row .colGallery, .mainComics .second_container .container-fluid, .mainComics .second_container .container-fluid .row .colGallery, .mainPersonajes .second_container .container-fluid, .mainPersonajes .second_container .container-fluid .row .colGallery, .mainCharacter .second_container .container-fluid, .mainCharacter .second_container .container-fluid .row .colGallery {
   padding: 0; }
 
-.marginReset, .mainIndex .second_container .container-fluid .row, .mainBiblioteca .second_container .container-fluid .row, .mainComics .second_container .container-fluid .row, .mainPersonajes .second_container .container-fluid .row {
+.marginReset, .mainIndex .second_container .container-fluid .row, .mainBiblioteca .second_container .container-fluid .row, .mainComics .second_container .container-fluid .row, .mainPersonajes .second_container .container-fluid .row, .mainCharacter .second_container .container-fluid .row {
   margin: 0; }
 
 * {
@@ -193,7 +193,7 @@ body {
             color: white; }
       .mainComics .second_container .container-fluid .row .comicExplainContainer {
         display: flex;
-        align-items: center;
+        align-content: center;
         min-height: 70vh;
         height: auto; }
         .mainComics .second_container .container-fluid .row .comicExplainContainer .article {
@@ -243,6 +243,59 @@ body {
     .first_container .logoContainer {
       border-right: none;
       border-bottom: 1px solid rgba(0, 0, 0, 0.2); } }
+
+.mainCharacter {
+  min-height: 84vh; }
+  .mainCharacter .second_container {
+    min-height: 58.8vh;
+    height: auto; }
+    .mainCharacter .second_container .container-fluid {
+      height: 100%; }
+      .mainCharacter .second_container .container-fluid .row .colGallery {
+        border: 1px solid rgba(0, 0, 0, 0.2); }
+      .mainCharacter .second_container .container-fluid .row .characterLeftContainer {
+        display: flex;
+        align-items: center;
+        height: auto;
+        border: none; }
+        .mainCharacter .second_container .container-fluid .row .characterLeftContainer .portada img {
+          height: 100%;
+          width: 100%; }
+        .mainCharacter .second_container .container-fluid .row .characterLeftContainer .portadaDescription {
+          height: auto;
+          margin: 4vh 0; }
+          .mainCharacter .second_container .container-fluid .row .characterLeftContainer .portadaDescription .article {
+            height: auto;
+            width: 90%;
+            margin: 4vh auto; }
+            .mainCharacter .second_container .container-fluid .row .characterLeftContainer .portadaDescription .article p {
+              margin: 1rem 0 1rem 0; }
+      .mainCharacter .second_container .container-fluid .row .characterRightContainer {
+        display: flex;
+        align-items: center; }
+        .mainCharacter .second_container .container-fluid .row .characterRightContainer .article {
+          height: auto;
+          width: 90%;
+          margin: 4vh auto; }
+          .mainCharacter .second_container .container-fluid .row .characterRightContainer .article p {
+            margin: 1rem 0 1rem 0; }
+
+@media (min-width: 320px) {
+  .characterLeftContainer {
+    flex-direction: column; }
+    .characterLeftContainer .portada {
+      width: 100%; }
+    .characterLeftContainer .portadaDescription {
+      width: 100%; } }
+
+@media (min-width: 768px) {
+  .characterLeftContainer {
+    flex-direction: row; }
+    .characterLeftContainer .portada {
+      width: 30%;
+      height: 100%; }
+    .characterLeftContainer .portadaDescription {
+      width: 70%; } }
 
 .mainContacto {
   min-height: 84vh; }

@@ -1,0 +1,80 @@
+.mainCharacter {
+    min-height: 84vh;
+    @extend .sections;
+    .second_container {
+        min-height: 58.8vh;
+        height: auto;
+        .container-fluid {
+            height: 100%;
+            @extend .paddingReset;
+            .row {
+                @extend .marginReset;
+                .colGallery {
+                    border: 1px solid rgba(0, 0, 0, 0.20);
+                    @extend .paddingReset;
+                }
+                .characterLeftContainer {
+                    display: flex;
+                    align-items: center;
+                    height: auto;
+                    border: none;
+                    .portada {
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .portadaDescription {
+                        height: auto;
+                        margin: 4vh 0;
+                        .article {
+                            height: auto;
+                            width: 90%;
+                            margin: 4vh auto;
+                            p {
+                                margin: 1rem 0 1rem 0;
+                            }
+                        }
+                    }
+                }
+                .characterRightContainer {
+                    display: flex;
+                    align-items: center;
+                    .article {
+                        height: auto;
+                        width: 90%;
+                        margin: 4vh auto;
+                        p {
+                            margin: 1rem 0 1rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) {
+    .characterLeftContainer {
+        flex-direction: column;
+        .portada {
+            width: 100%;
+        }
+        .portadaDescription {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .characterLeftContainer {
+        flex-direction: row;
+        .portada {
+            width: 30%;
+            height: 100%;
+        }
+        .portadaDescription {
+            width: 70%;
+        }
+    }
+}
